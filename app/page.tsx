@@ -67,6 +67,8 @@ export default function Dashboard() {
   const [filter, setFilter] = useState<string>("all");
   const [query, setQuery] = useState<string>("");
   const [tick, setTick] = useState(0);
+  const [imapStatus, setImapStatus] = useState<string | null>(null);
+  const [imapLoading, setImapLoading] = useState(false);
 
   const fetchStats = async () => {
     try {
@@ -127,6 +129,31 @@ export default function Dashboard() {
     fetchStats();
   };
 
+  const runImapSync = async () => {
+    try {
+      setImapLoading(true);
+      setImapStatus("Сканирую inbox progon.pro@mail.ru…");
+      const r = await fetch("/api/imap-sync?sinceDays=14", { method: "POST" });
+      const j = await r.json();
+      if (!j.ok) {
+        setImapStatus(`Ошибка: ${j.error}`);
+      } else {
+        const parts = [
+          `Просмотрено ${j.scanned} писем`,
+          `новых ответов: ${j.marked_new}`,
+          `уже отмеченных: ${j.already_marked}`,
+          `не в нашем списке: ${j.ignored_not_in_list}`,
+        ];
+        setImapStatus(parts.join(" · "));
+      }
+      fetchStats();
+    } catch (e) {
+      setImapStatus(`Ошибка: ${e instanceof Error ? e.message : String(e)}`);
+    } finally {
+      setImapLoading(false);
+    }
+  };
+
   return (
     <div className="px-4 sm:px-8 py-6 max-w-[1400px] mx-auto">
       <header className="flex items-center justify-between flex-wrap gap-3 mb-6">
@@ -161,8 +188,22 @@ export default function Dashboard() {
           >
             {loading ? "..." : "Обновить"}
           </button>
+          <button
+            onClick={runImapSync}
+            disabled={imapLoading}
+            title="Прочитать inbox progon.pro@mail.ru и отметить школы, которые ответили"
+            className="bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white px-3 py-1 rounded text-sm"
+          >
+            {imapLoading ? "Сканирую..." : "Проверить ответы"}
+          </button>
         </div>
       </header>
+
+      {imapStatus && (
+        <div className="bg-purple-900/20 border border-purple-700/40 text-purple-200 rounded p-2 mb-4 text-xs">
+          IMAP: {imapStatus}
+        </div>
+      )}
 
       {error && (
         <div className="bg-rose-900/30 border border-rose-700 text-rose-200 rounded p-3 mb-4 text-sm">
