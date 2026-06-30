@@ -69,6 +69,7 @@ export default function Dashboard() {
   const [tick, setTick] = useState(0);
   const [imapStatus, setImapStatus] = useState<string | null>(null);
   const [imapLoading, setImapLoading] = useState(false);
+  const [retryModalOpen, setRetryModalOpen] = useState(false);
 
   const fetchStats = async () => {
     try {
@@ -132,7 +133,7 @@ export default function Dashboard() {
   const runImapSync = async () => {
     try {
       setImapLoading(true);
-      setImapStatus("Сканирую inbox progon.pro@mail.ru…");
+      setImapStatus("Сканирую inbox progon.lpr@mail.ru…");
       const r = await fetch("/api/imap-sync?sinceDays=14", { method: "POST" });
       const j = await r.json();
       if (!j.ok) {
@@ -191,13 +192,27 @@ export default function Dashboard() {
           <button
             onClick={runImapSync}
             disabled={imapLoading}
-            title="Прочитать inbox progon.pro@mail.ru и отметить школы, которые ответили"
+            title="Прочитать inbox progon.lpr@mail.ru и отметить школы, которые ответили"
             className="bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white px-3 py-1 rounded text-sm"
           >
             {imapLoading ? "Сканирую..." : "Проверить ответы"}
           </button>
+          <button
+            onClick={() => setRetryModalOpen(true)}
+            title="Прогнать повторное письмо по тем кто не bounce и не ответил"
+            className="bg-amber-600 hover:bg-amber-500 text-white px-3 py-1 rounded text-sm"
+          >
+            Прогнать повтор
+          </button>
         </div>
       </header>
+
+      {retryModalOpen && (
+        <RetryModal
+          onClose={() => setRetryModalOpen(false)}
+          onAfter={() => fetchStats()}
+        />
+      )}
 
       {imapStatus && (
         <div className="bg-purple-900/20 border border-purple-700/40 text-purple-200 rounded p-2 mb-4 text-xs">
@@ -257,7 +272,7 @@ export default function Dashboard() {
               value={data.summary.replied}
               accent="purple"
               sub="отмечено вручную"
-              tooltip="Школа ответила на письмо. Считается вручную: Кирилл кликает галочку в таблице когда видит ответ в progon.pro@mail.ru. В будущем можно автоматизировать через IMAP — будет автоматически отмечать."
+              tooltip="Школа ответила на письмо. Считается вручную: Кирилл кликает галочку в таблице когда видит ответ в progon.lpr@mail.ru. В будущем можно автоматизировать через IMAP — будет автоматически отмечать."
             />
           </section>
 
@@ -377,6 +392,174 @@ export default function Dashboard() {
       {!data && !error && (
         <div className="text-zinc-400 text-sm">Загружаю статусы из Resend…</div>
       )}
+    </div>
+  );
+}
+
+function RetryModal({ onClose, onAfter }: { onClose: () => void; onAfter: () => void }) {
+  type Preview = {
+    total: number;
+    candidates: string[];
+    excluded_bounced: number;
+    excluded_replied: number;
+    excluded_no_resend_id: number;
+  };
+  type HistoryItem = {
+    ts: string;
+    subject: string;
+    dry_run: boolean;
+    attempted: number;
+    sent: number;
+    failed: number;
+  };
+  const [preview, setPreview] = useState<Preview | null>(null);
+  const [history, setHistory] = useState<HistoryItem[]>([]);
+  const [subject, setSubject] = useState("Партнерство — короткое напоминание");
+  const [dryRun, setDryRun] = useState(true);
+  const [confirmText, setConfirmText] = useState("");
+  const [running, setRunning] = useState(false);
+  const [result, setResult] = useState<string | null>(null);
+
+  useEffect(() => {
+    (async () => {
+      const r = await fetch("/api/broadcast-retry", { cache: "no-store" });
+      const j = (await r.json()) as { preview: Preview; history: HistoryItem[] };
+      setPreview(j.preview);
+      setHistory(j.history);
+    })();
+  }, []);
+
+  const expectedConfirm = "ПРОГНАТЬ";
+  const canRun = confirmText === expectedConfirm && !!preview && preview.candidates.length > 0;
+
+  const execute = async () => {
+    if (!canRun) return;
+    setRunning(true);
+    setResult(null);
+    try {
+      const r = await fetch("/api/broadcast-retry", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          dryRun,
+          subject,
+          delayMs: 500,
+          confirm: "RETRY-BROADCAST",
+        }),
+      });
+      const j = (await r.json()) as {
+        ok: boolean;
+        attempted: number;
+        sent: number;
+        failed: number;
+        dry_run: boolean;
+        error?: string;
+      };
+      if (!j.ok) {
+        setResult(`Ошибка: ${j.error}`);
+      } else {
+        setResult(
+          `${j.dry_run ? "DRY-RUN" : "LIVE"}: попытка ${j.attempted}, успех ${j.sent}, ошибок ${j.failed}`,
+        );
+      }
+      onAfter();
+    } finally {
+      setRunning(false);
+    }
+  };
+
+  return (
+    <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4" onClick={onClose}>
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+      >
+        <div className="flex justify-between items-start mb-4">
+          <h2 className="text-xl font-semibold">Повторная рассылка</h2>
+          <button onClick={onClose} className="text-zinc-500 hover:text-white text-xl">✕</button>
+        </div>
+
+        {!preview ? (
+          <div className="text-zinc-400 text-sm">Загружаю превью…</div>
+        ) : (
+          <>
+            <div className="bg-zinc-800/50 rounded p-4 mb-4">
+              <div className="text-sm text-zinc-300 mb-2">Кому уйдёт:</div>
+              <div className="grid grid-cols-3 gap-3 text-center">
+                <div>
+                  <div className="text-3xl font-bold text-amber-400">{preview.candidates.length}</div>
+                  <div className="text-xs text-zinc-500">кандидатов</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-rose-400">{preview.excluded_bounced}</div>
+                  <div className="text-xs text-zinc-500">bounce исключены</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-purple-400">{preview.excluded_replied}</div>
+                  <div className="text-xs text-zinc-500">ответили (не шлём)</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mb-4">
+              <label className="text-xs text-zinc-400 block mb-1">Тема повтора</label>
+              <input
+                type="text"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                className="bg-zinc-800 border border-zinc-700 rounded px-3 py-2 text-sm w-full"
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="flex items-center gap-2 text-sm">
+                <input type="checkbox" checked={dryRun} onChange={(e) => setDryRun(e.target.checked)} />
+                <span>Dry-run (не отправлять, только посчитать)</span>
+              </label>
+            </div>
+
+            <div className="mb-4">
+              <label className="text-xs text-zinc-400 block mb-1">
+                Введите <code className="bg-zinc-800 px-1 rounded">{expectedConfirm}</code> для подтверждения:
+              </label>
+              <input
+                type="text"
+                value={confirmText}
+                onChange={(e) => setConfirmText(e.target.value)}
+                className="bg-zinc-800 border border-zinc-700 rounded px-3 py-2 text-sm w-full font-mono"
+              />
+            </div>
+
+            <button
+              onClick={execute}
+              disabled={!canRun || running}
+              className="bg-amber-600 hover:bg-amber-500 disabled:opacity-30 disabled:cursor-not-allowed text-white px-4 py-2 rounded w-full"
+            >
+              {running ? "Шлю..." : dryRun ? "Запустить DRY-RUN" : `LIVE: отправить ${preview.candidates.length} писем`}
+            </button>
+
+            {result && (
+              <div className="mt-4 p-3 bg-zinc-800 rounded text-sm">{result}</div>
+            )}
+
+            {history.length > 0 && (
+              <div className="mt-6">
+                <div className="text-sm text-zinc-400 mb-2">История повторов</div>
+                <div className="space-y-1 max-h-40 overflow-y-auto">
+                  {history.map((h, i) => (
+                    <div key={i} className="text-xs bg-zinc-800/50 rounded p-2 flex justify-between">
+                      <span className="text-zinc-400">{new Date(h.ts).toLocaleString("ru-RU")}</span>
+                      <span>
+                        {h.dry_run ? "DRY" : "LIVE"}: попытка {h.attempted}, успех {h.sent}, ошибок {h.failed}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </>
+        )}
+      </div>
     </div>
   );
 }

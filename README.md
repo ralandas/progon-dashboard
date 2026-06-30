@@ -67,7 +67,7 @@ npm run dev
 ## Как работает tracking
 
 1. **Resend events** (`delivered`, `opened`, `clicked`, `bounced`, `complained`) тянутся каждые 30 сек (настраивается в UI) для всех 200 `resend_id` параллельно.
-2. **Replied** не отслеживается Resend (потому что `reply_to` ведёт на внешний `progon.pro@mail.ru`), поэтому помечается **вручную** кликом по галочке в таблице. Сохраняется в `data/replies.json` локально или в `/tmp/replies.json` на Vercel.
+2. **Replied** не отслеживается Resend (потому что `reply_to` ведёт на внешний `progon.lpr@mail.ru`), поэтому помечается **вручную** кликом по галочке в таблице. Сохраняется в `data/replies.json` локально или в `/tmp/replies.json` на Vercel.
 3. **Без БД** — стэйт = `recipients.json` (статичный список) + Resend как источник истины + локальный файл с reply-марками.
 
 ---
@@ -95,7 +95,7 @@ git push
 ## Ограничения / что доделать потом
 
 - **Replies marks ephemeral на Vercel** — `/tmp` сбрасывается на cold start. Если нужна персистентность, добавить Vercel KV: `npm install @vercel/kv`, заменить `lib/replies.ts`.
-- **Inbox-парсинг для авто-replied** — сейчас вручную. Можно подключить IMAP к `progon.pro@mail.ru` и парсить inbox раз в 5 минут.
+- **Inbox-парсинг для авто-replied** — сейчас вручную. Можно подключить IMAP к `progon.lpr@mail.ru` и парсить inbox раз в 5 минут.
 - **Сегментация по доменам** — если будет несколько кампаний, добавить колонку `campaign` в `recipients.json` и фильтр в UI.
 
 ---
@@ -104,4 +104,4 @@ git push
 
 Часть проекта **Лид Завод** (`ralandas/leadfactory`). Рассылка прогнана 30 июня 2026 на 200 email-адресов школ недвижимости (Москва, СПб, регионы) с офером партнёрства Progon.pro.
 
-Заказчик: Кирилл (`+79968974380`), ответы летят на `progon.pro@mail.ru`.
+Заказчик: Кирилл (`+79968974380`), ответы летят на `progon.lpr@mail.ru`.
