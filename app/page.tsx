@@ -173,13 +173,51 @@ export default function Dashboard() {
       {data && (
         <>
           <section className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 mb-6">
-            <StatCard label="Всего" value={data.summary.total} sub={`${data.summary.sent} принято Resend`} />
-            <StatCard label="Доставлено" value={data.summary.delivered} accent="emerald" />
-            <StatCard label="Открыто" value={data.summary.opened} accent="sky" />
-            <StatCard label="Кликнуто" value={data.summary.clicked} accent="indigo" />
-            <StatCard label="Bounce" value={data.summary.bounced} accent="rose" sub="мёртвые ящики" />
-            <StatCard label="В пути" value={data.summary.sent_only + data.summary.delayed + data.summary.unknown} accent="amber" sub="нет события" />
-            <StatCard label="Ответили" value={data.summary.replied} accent="purple" sub="отмечено вручную" />
+            <StatCard
+              label="Всего"
+              value={data.summary.total}
+              sub={`${data.summary.sent} принято Resend`}
+              tooltip="Сколько всего email-адресов в базе рассылки. Из них N принято Resend (наш email-провайдер) на отправку. Остальные 3 не ушли — упёрлись в дневной лимит, догоним завтра."
+            />
+            <StatCard
+              label="Доставлено"
+              value={data.summary.delivered}
+              accent="emerald"
+              tooltip="Письмо физически легло в Inbox получателя. Mail-сервер школы подтвердил приём. Это база для отслеживания дальнейших действий — открытий, кликов, ответов."
+            />
+            <StatCard
+              label="Открыто"
+              value={data.summary.opened}
+              accent="sky"
+              tooltip="Получатель открыл письмо в почтовом клиенте. Трекается через скрытый пиксель Resend. Внимание: корп-серверы (mail.ru/yandex/exchange) часто режут пиксели — реальная открываемость может быть выше."
+            />
+            <StatCard
+              label="Кликнуто"
+              value={data.summary.clicked}
+              accent="indigo"
+              tooltip="Получатель кликнул по ссылке в письме. В нашей рассылке ссылок нет (только телефон Кирилла) — поэтому здесь всегда 0."
+            />
+            <StatCard
+              label="Bounce"
+              value={data.summary.bounced}
+              accent="rose"
+              sub="мёртвые ящики"
+              tooltip="Адреса не существуют. Mail-сервер ответил «нет такого ящика». Бренды (Cian, Domclick, Etagi, PIK) не держат шаблонных academy@/school@/edu@. Повторно слать бесполезно — НЕ включаем в следующий прогон."
+            />
+            <StatCard
+              label="В пути"
+              value={data.summary.sent_only + data.summary.delayed + data.summary.unknown}
+              accent="amber"
+              sub="нет события"
+              tooltip="Resend письмо отправил, но получающий сервер пока не подтвердил доставку. Либо greylist-задержка (mail.ru тормозит на холодных отправителях), либо письмо приняли но без сигнала Resend-у. Часть в итоге станет delivered, часть — bounce."
+            />
+            <StatCard
+              label="Ответили"
+              value={data.summary.replied}
+              accent="purple"
+              sub="отмечено вручную"
+              tooltip="Школа ответила на письмо. Считается вручную: Кирилл кликает галочку в таблице когда видит ответ в progon.pro@mail.ru. В будущем можно автоматизировать через IMAP — будет автоматически отмечать."
+            />
           </section>
 
           <section className="flex items-center gap-2 mb-3 flex-wrap">
@@ -307,11 +345,13 @@ function StatCard({
   value,
   sub,
   accent,
+  tooltip,
 }: {
   label: string;
   value: number;
   sub?: string;
   accent?: "emerald" | "sky" | "indigo" | "rose" | "amber" | "purple";
+  tooltip?: string;
 }) {
   const accentClass: Record<string, string> = {
     emerald: "text-emerald-400",
@@ -322,12 +362,27 @@ function StatCard({
     purple: "text-purple-400",
   };
   return (
-    <div className="bg-zinc-900/70 border border-zinc-800 rounded p-3">
-      <div className="text-[10px] uppercase tracking-wider text-zinc-500">{label}</div>
+    <div className="bg-zinc-900/70 border border-zinc-800 rounded p-3 relative group">
+      <div className="text-[10px] uppercase tracking-wider text-zinc-500 flex items-center gap-1">
+        {label}
+        {tooltip && (
+          <span
+            title={tooltip}
+            className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full bg-zinc-700 text-zinc-300 text-[9px] cursor-help"
+          >
+            ?
+          </span>
+        )}
+      </div>
       <div className={`text-2xl font-bold mt-1 ${accent ? accentClass[accent] : "text-zinc-100"}`}>
         {value}
       </div>
       {sub && <div className="text-[10px] text-zinc-500 mt-0.5">{sub}</div>}
+      {tooltip && (
+        <div className="hidden group-hover:block absolute top-full left-0 right-0 mt-1 z-10 bg-zinc-900 border border-zinc-700 rounded p-2 text-xs text-zinc-300 shadow-lg leading-relaxed">
+          {tooltip}
+        </div>
+      )}
     </div>
   );
 }
