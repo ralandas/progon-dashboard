@@ -30,7 +30,9 @@ type Summary = {
   replied: number;
 };
 
-type StatsResp = { summary: Summary; rows: Row[]; fetchedAt: string };
+type Diagnostics = { fetched: number; failed_this_round: number; sticky_cache_size: number };
+
+type StatsResp = { summary: Summary; rows: Row[]; fetchedAt: string; diagnostics?: Diagnostics };
 
 const EVENT_COLORS: Record<string, string> = {
   delivered: "bg-emerald-500/20 text-emerald-300 border-emerald-500/40",
@@ -259,7 +261,17 @@ export default function Dashboard() {
           </section>
 
           <footer className="text-xs text-zinc-500 mt-6">
-            Tick: {tick} · Fetched at: {data.fetchedAt}
+            Tick: {tick} · Fetched: {new Date(data.fetchedAt).toLocaleTimeString("ru-RU")}
+            {data.diagnostics && (
+              <span className="ml-3">
+                · API: {data.diagnostics.fetched - data.diagnostics.failed_this_round}/{data.diagnostics.fetched} ответили
+                {data.diagnostics.failed_this_round > 0 && (
+                  <span className="text-amber-400 ml-1">
+                    (sticky cache использован для {data.diagnostics.failed_this_round})
+                  </span>
+                )}
+              </span>
+            )}
           </footer>
         </>
       )}

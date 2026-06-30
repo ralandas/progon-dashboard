@@ -18,13 +18,13 @@ export type ResendEmail = {
 
 const RESEND_API = "https://api.resend.com";
 
-export async function fetchResendEmail(id: string, apiKey: string): Promise<ResendEmail | null> {
+async function fetchOnce(id: string, apiKey: string): Promise<ResendEmail | null> {
   try {
     const r = await fetch(`${RESEND_API}/emails/${id}`, {
       headers: { Authorization: `Bearer ${apiKey}` },
-      next: { revalidate: 0 },
       cache: "no-store",
     });
+    if (r.status === 429) return null; // rate-limited, signal caller to retry
     if (!r.ok) return null;
     const data = await r.json();
     return data as ResendEmail;
@@ -33,10 +33,26 @@ export async function fetchResendEmail(id: string, apiKey: string): Promise<Rese
   }
 }
 
+export async function fetchResendEmail(
+  id: string,
+  apiKey: string,
+  retries = 4,
+): Promise<ResendEmail | null> {
+  for (let attempt = 0; attempt < retries; attempt++) {
+    const r = await fetchOnce(id, apiKey);
+    if (r) return r;
+    // Exponential backoff: 500ms, 1500ms, 4500ms, 13.5s
+    if (attempt < retries - 1) {
+      await new Promise((res) => setTimeout(res, 500 * Math.pow(3, attempt)));
+    }
+  }
+  return null;
+}
+
 export async function fetchManyResendStatuses(
   ids: string[],
   apiKey: string,
-  concurrency = 12,
+  concurrency = 6,
 ): Promise<Record<string, ResendEmail | null>> {
   const results: Record<string, ResendEmail | null> = {};
   let cursor = 0;
