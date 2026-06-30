@@ -1,46 +1,67 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { getRedis } from "./redis";
 
-// Where we store the manually-marked replies.
-// On Vercel runtime FS is read-only for everything except /tmp — so we use /tmp,
-// understanding that it's ephemeral per container (resets on cold start).
-// For a real persistence layer, swap to Vercel KV / Edge Config later.
-const REPLIES_FILE = process.env.REPLIES_FILE || (process.env.VERCEL ? "/tmp/replies.json" : path.join(process.cwd(), "data", "replies.json"));
+const REDIS_KEY = "progon:replies";
 
-type RepliesStore = {
-  byEmail: Record<string, { repliedAt: string; note?: string }>;
-};
+const FILE_PATH =
+  process.env.REPLIES_FILE ||
+  (process.env.VERCEL ? "/tmp/replies.json" : path.join(process.cwd(), "data", "replies.json"));
 
-async function readStore(): Promise<RepliesStore> {
+export type ReplyInfo = { repliedAt: string; note?: string };
+export type RepliesMap = Record<string, ReplyInfo>;
+
+async function readFromFile(): Promise<RepliesMap> {
   try {
-    const raw = await fs.readFile(REPLIES_FILE, "utf8");
-    return JSON.parse(raw) as RepliesStore;
+    const raw = await fs.readFile(FILE_PATH, "utf8");
+    const parsed = JSON.parse(raw) as unknown;
+    if (parsed && typeof parsed === "object" && "byEmail" in parsed) {
+      const byEmail = (parsed as { byEmail?: RepliesMap }).byEmail;
+      if (byEmail) return byEmail;
+    }
+    return (parsed as RepliesMap) ?? {};
   } catch {
-    return { byEmail: {} };
+    return {};
   }
 }
 
-async function writeStore(store: RepliesStore): Promise<void> {
-  await fs.mkdir(path.dirname(REPLIES_FILE), { recursive: true });
-  await fs.writeFile(REPLIES_FILE, JSON.stringify(store, null, 2), "utf8");
+async function writeToFile(map: RepliesMap): Promise<void> {
+  await fs.mkdir(path.dirname(FILE_PATH), { recursive: true });
+  await fs.writeFile(FILE_PATH, JSON.stringify({ byEmail: map }, null, 2), "utf8");
 }
 
-export async function listReplies(): Promise<RepliesStore["byEmail"]> {
-  const store = await readStore();
-  return store.byEmail;
+export async function listReplies(): Promise<RepliesMap> {
+  const redis = getRedis();
+  if (redis) {
+    const stored = await redis.hgetall<Record<string, ReplyInfo>>(REDIS_KEY);
+    return stored ?? {};
+  }
+  return readFromFile();
 }
 
 export async function markReplied(email: string, note?: string): Promise<void> {
-  const store = await readStore();
-  store.byEmail[email.toLowerCase()] = {
-    repliedAt: new Date().toISOString(),
-    ...(note ? { note } : {}),
-  };
-  await writeStore(store);
+  const key = email.toLowerCase();
+  const info: ReplyInfo = { repliedAt: new Date().toISOString(), ...(note ? { note } : {}) };
+
+  const redis = getRedis();
+  if (redis) {
+    await redis.hset(REDIS_KEY, { [key]: info });
+    return;
+  }
+  const map = await readFromFile();
+  map[key] = info;
+  await writeToFile(map);
 }
 
 export async function unmarkReplied(email: string): Promise<void> {
-  const store = await readStore();
-  delete store.byEmail[email.toLowerCase()];
-  await writeStore(store);
+  const key = email.toLowerCase();
+
+  const redis = getRedis();
+  if (redis) {
+    await redis.hdel(REDIS_KEY, key);
+    return;
+  }
+  const map = await readFromFile();
+  delete map[key];
+  await writeToFile(map);
 }

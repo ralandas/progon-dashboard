@@ -30,7 +30,12 @@ type Summary = {
   replied: number;
 };
 
-type Diagnostics = { fetched: number; failed_this_round: number; sticky_cache_size: number };
+type Diagnostics = {
+  fetched: number;
+  failed_this_round: number;
+  sticky_cache_size: number;
+  shared_storage?: "redis" | "memory";
+};
 
 type StatsResp = { summary: Summary; rows: Row[]; fetchedAt: string; diagnostics?: Diagnostics };
 
@@ -268,6 +273,20 @@ export default function Dashboard() {
                 {data.diagnostics.failed_this_round > 0 && (
                   <span className="text-amber-400 ml-1">
                     (sticky cache использован для {data.diagnostics.failed_this_round})
+                  </span>
+                )}
+                {data.diagnostics.shared_storage && (
+                  <span
+                    className={`ml-3 ${
+                      data.diagnostics.shared_storage === "redis"
+                        ? "text-emerald-400"
+                        : "text-amber-400"
+                    }`}
+                  >
+                    · storage: {data.diagnostics.shared_storage}
+                    {data.diagnostics.shared_storage === "memory" && (
+                      <span className="text-zinc-500"> (общий стейт между users не работает)</span>
+                    )}
                   </span>
                 )}
               </span>
