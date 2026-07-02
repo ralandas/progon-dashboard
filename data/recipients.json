@@ -2,1201 +2,1401 @@
   {
     "i": 1,
     "to": "academy@century21.ru",
-    "resend_id": "1e48ad23-ec55-4734-87e8-989083fc28ad",
-    "status": "sent"
+    "resend_id": "5cd164f5-3041-4cb0-982d-d713b2f405ca",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 2,
     "to": "info@mmir.pro",
-    "resend_id": "1174e11f-c3f4-4a2c-a1e3-99f5d11bc67a",
-    "status": "sent"
+    "resend_id": "2cfe63c5-492c-4363-852e-cceb79380840",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 3,
     "to": "partner@mmir.pro",
-    "resend_id": "f81fb25e-70a9-461a-ad92-1cabf0ec0b27",
-    "status": "sent"
+    "resend_id": "078d652a-81d3-4408-b5aa-647f81bf6927",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 4,
     "to": "hr@miel.ru",
-    "resend_id": "58c4dedc-fab4-46f7-bd0e-8de83c8a6598",
-    "status": "sent"
+    "resend_id": "cc4ad0d0-aa0c-463d-ad36-31217da0377d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 5,
     "to": "info@rocketcon.ru",
-    "resend_id": "bfe09a5d-58b4-4792-9b32-66433c057c83",
-    "status": "sent"
+    "resend_id": "79524452-fa9c-4b3f-9d5a-868a6629bb96",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 6,
     "to": "sankin@sankin.ru",
-    "resend_id": "b97eb1d7-7610-4661-b0f8-ae3db760d544",
-    "status": "sent"
+    "resend_id": "1d8ba236-5106-4873-8718-e4e578996f18",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 7,
     "to": "sankin.academy@gmail.com",
-    "resend_id": "cfab4aa3-4c48-48bf-a473-019067d4fb3e",
-    "status": "sent"
+    "resend_id": "4389fc39-a4c7-402c-9cc6-e4830cd959ba",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 8,
     "to": "artem@tsogoev.ru",
-    "resend_id": "184414cd-8953-4e01-98e5-4de240cfdf40",
-    "status": "sent"
+    "resend_id": "e6cf267b-d364-4d64-b3fd-f4fce5fe2945",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 9,
     "to": "info@smarent.com",
-    "resend_id": "a7ccd6f9-c4d7-418f-b7ef-93bff362338e",
-    "status": "sent"
+    "resend_id": "ecf70a45-9a37-41e7-90c3-619710d6bf9c",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 10,
     "to": "sales@smarent.com",
-    "resend_id": "9caad038-19bf-4b5d-a8a0-9ca358efdf6e",
-    "status": "sent"
+    "resend_id": "b002d903-01b3-400a-b733-518cc2b64870",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 11,
     "to": "support@mdmitrieva.ru",
-    "resend_id": "bc3290fb-68f9-433d-8d43-ca31b57a5452",
-    "status": "sent"
+    "resend_id": "03ea0ed2-cbe5-4571-a5e5-0cbe49e443fc",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 12,
     "to": "support@gorodinvestorov.ru",
-    "resend_id": "5883f804-38f3-4592-9f2f-e4a092c4e746",
-    "status": "sent"
+    "resend_id": "adfceaab-872c-4c41-bf8e-6dd096293c71",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 13,
     "to": "partner@m2.ru",
-    "resend_id": "0733b489-08df-4c93-be79-122743a8c59c",
-    "status": "sent"
+    "resend_id": "0d48c7d7-4edd-42f5-aa7e-3a5523bafd5d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 14,
     "to": "support@m2.ru",
-    "resend_id": "ea5ea33c-9abd-425e-a5bc-c224d08dc035",
-    "status": "sent"
+    "resend_id": "d7b68e6c-4384-4fbf-b1d6-9a4f48bb461a",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 15,
     "to": "studio@cian.ru",
-    "resend_id": "af25f4b9-906d-437c-8956-84546ea7cbeb",
-    "status": "sent"
+    "resend_id": "b617ad14-a410-4993-ad3c-fad81595c858",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 16,
     "to": "pro@domclick.ru",
-    "resend_id": "e8761331-0519-492a-9ace-846e5c1fe08c",
-    "status": "sent"
+    "resend_id": "3f8f2bf7-4bd4-447b-96a7-dd989026a467",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 17,
     "to": "re-education@avito.ru",
-    "resend_id": "4ed5d977-92be-4605-9eb9-dc357c5c6953",
-    "status": "sent"
+    "resend_id": "dcc02396-ab18-45b4-ab9f-305758b4cee6",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 18,
     "to": "hr@whitewill.ru",
-    "resend_id": "6ee0e8ae-f0fb-4ea9-95ec-01b399070554",
-    "status": "sent"
+    "resend_id": "5052ee46-6348-4049-9439-4520155b6727",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 19,
     "to": "info@developer-school.ru",
-    "resend_id": "3690b4fa-96ab-4c6a-a8b1-2b08c0f8c4f8",
-    "status": "sent"
+    "resend_id": "09874d03-23c0-4175-bf79-6c656b5eb562",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 20,
     "to": "ishmetova@developer-school.ru",
-    "resend_id": "ce9fe7b2-02be-4893-918c-5ae42cc7ce61",
-    "status": "sent"
+    "resend_id": "4b12ab9f-d5d3-4e39-b0d7-bbcffba627fd",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 21,
     "to": "edu@etagi.com",
-    "resend_id": "d562f80d-349f-4438-8693-267ca5b2be37",
-    "status": "sent"
+    "resend_id": "a7d8af7a-13af-4288-811e-d8366cff7cc3",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 22,
     "to": "feedback@etagi.com",
-    "resend_id": "afc3bc92-31fa-4c31-a269-a8e05386d789",
-    "status": "sent"
+    "resend_id": "af7f2f81-7dda-4ffe-9347-173ee0d607a3",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 23,
     "to": "gusev@glavrieltor.ru",
-    "resend_id": "2a443d01-0b9a-4834-b1a6-86e64807f76f",
-    "status": "sent"
+    "resend_id": "578337a1-f4f9-4dbd-96d0-f0f852766368",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 24,
     "to": "info@ulitskaya.ru",
-    "resend_id": "20694ace-428b-4d36-8285-23e573c07ea9",
-    "status": "sent"
+    "resend_id": "25bd0d19-6444-44c0-9481-8f35ce33a209",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 25,
     "to": "info@mha-edu.ru",
-    "resend_id": "ec350f78-ce3c-4391-9125-85c153671ec7",
-    "status": "sent"
+    "resend_id": "bdcc22bd-d70d-45c9-a17b-9ab317c218cd",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 26,
     "to": "edu@rgud.ru",
-    "resend_id": "820cf144-c49c-4cc8-a636-70f4248239d0",
-    "status": "sent"
+    "resend_id": "facc51ea-5dae-4650-a71c-899e1efacc02",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 27,
     "to": "info@rgud.ru",
-    "resend_id": "b25eb8f9-dcba-4314-bf00-2b1ef93d3940",
-    "status": "sent"
+    "resend_id": "50904316-b461-4b90-883c-921a7989715a",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 28,
     "to": "support@volkovatatyana.ru",
-    "resend_id": "92739341-8d16-4264-a125-78330b63e172",
-    "status": "sent"
+    "resend_id": "d33a271d-cfe3-4b50-bd3c-7bc22da5a979",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 29,
     "to": "partner@volkovatatyana.ru",
-    "resend_id": "93afdcad-b834-4a87-91e2-4e6779af45b2",
-    "status": "sent"
+    "resend_id": "85586f93-872b-4918-bdbf-b9172188229a",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 30,
     "to": "info@medushenko.ru",
-    "resend_id": "6179a549-9132-4ba8-bd0d-37996cd4ffac",
-    "status": "sent"
+    "resend_id": "3404db0f-3404-4ce1-bd98-50a3e9a62db3",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 31,
     "to": "galuzin.invest@yandex.ru",
-    "resend_id": "fd6f6e4d-e95b-424c-b94e-edf3b3ccc96d",
-    "status": "sent"
+    "resend_id": "7aae45a9-dea4-4a81-b320-e71abd1cd107",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 32,
     "to": "training@incom.ru",
-    "resend_id": "c9e9e471-3066-41f4-8849-b181903143c9",
-    "status": "sent"
+    "resend_id": "f22ae81c-648c-46b8-9d41-0bba1650d684",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 33,
     "to": "info@grm.su",
-    "resend_id": "2c4c4acb-b427-4092-9b5b-fc3827e724d7",
-    "status": "sent"
+    "resend_id": "6e3b0f2a-f482-4e86-b00d-8713dff0b1f6",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 34,
     "to": "edu@grm.su",
-    "resend_id": "37882610-8c28-49f2-a66a-be0d34eac1e9",
-    "status": "sent"
+    "resend_id": "8bc4313a-e0c7-462c-a524-988e29d204f2",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 35,
     "to": "hr-plus@samoletplus.ru",
-    "resend_id": "83a8d683-a7fb-4b36-9575-6a4ccef4eeff",
-    "status": "sent"
+    "resend_id": "c4c40993-c707-4cd5-86fb-2edf79688c86",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 36,
     "to": "partner@samoletplus.ru",
-    "resend_id": "db8add17-2839-4069-b01a-a383a9b7d662",
-    "status": "sent"
+    "resend_id": "6788d32f-13da-4e33-a292-86adb421524d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 37,
     "to": "support@bayramova-school.ru",
-    "resend_id": "316d7d71-e324-44da-b21d-6332198f7be3",
-    "status": "sent"
+    "resend_id": "98d37e9a-7a4f-4a5f-b165-c51b4547864f",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 38,
     "to": "info@pm-academy.ru",
-    "resend_id": "52fd650b-2c1b-4d9d-ad8a-d06cf456c0eb",
-    "status": "sent"
+    "resend_id": "bd618831-a09d-48f6-8bff-5523b5990045",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 39,
     "to": "info@likpro.ru",
-    "resend_id": "f2b08d0c-4411-48d8-aca3-9cb185406e5e",
-    "status": "sent"
+    "resend_id": "07636186-911c-40ca-93f9-aaca418aa927",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 40,
     "to": "support@likpro.ru",
-    "resend_id": "a1ba5926-e92e-4203-8239-75e8326b72a1",
-    "status": "sent"
+    "resend_id": "bec80131-95c4-4407-8999-8f6c4617dc52",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 41,
     "to": "realty@vysotsky.estate",
-    "resend_id": "5f65d9e2-9741-43f0-bc4e-57b2bdaba8d0",
-    "status": "sent"
+    "resend_id": "93bf0b2c-876f-4807-8787-5f9116196e4c",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 42,
     "to": "school@ndv.ru",
-    "resend_id": "ff5c8700-642c-46f4-9bb8-c9d96b5c2316",
-    "status": "sent"
+    "resend_id": "549482b3-d7f6-498a-b19c-9b0121166afe",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 43,
     "to": "edu@vsnr.ru",
-    "resend_id": "2415cdc5-630d-4c53-96bf-0fa7353bb0c8",
-    "status": "sent"
+    "resend_id": "af8cf583-0aac-4daa-9b8b-a7a81cbf49a8",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 44,
     "to": "info@rgr.ru",
-    "resend_id": "a5e83d92-bb45-4277-9f49-afc12b3400ce",
-    "status": "sent"
+    "resend_id": "b3983563-1e9f-41c1-9602-f02ddd26930d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 45,
     "to": "edu@rgr.ru",
-    "resend_id": "6cc1ffd4-ae1c-40fc-83e7-f20034e8ed7d",
-    "status": "sent"
+    "resend_id": "bd1af678-1feb-47ea-a1dd-a53b502a3ce6",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 46,
     "to": "academy@estatet.ru",
-    "resend_id": "db422d3e-a427-4e95-bd06-cc63482b5996",
-    "status": "sent"
+    "resend_id": "7b8569dc-dbd0-4489-bbf2-af27d9d7d6a0",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 47,
     "to": "info@toprieltor.ru",
-    "resend_id": "fb77db8b-1237-4c37-9da7-b21c7789069f",
-    "status": "sent"
+    "resend_id": "07a17bf2-4e22-484d-b7f0-12e49720619a",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 48,
     "to": "school@best-nedvigimost.ru",
-    "resend_id": "40adcd53-e3f5-464a-affa-b03f1371c87d",
-    "status": "sent"
+    "resend_id": "a47cbdd9-d10f-4df1-8cfe-8fa9417e763f",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 49,
     "to": "edu@azbuka.ru",
-    "resend_id": "9bdd1edf-7c2c-4f4d-91ff-878bfcda5d40",
-    "status": "sent"
+    "resend_id": "dfc9a8c1-02bc-4c13-ad5f-05c00e55232e",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 50,
     "to": "study@invest-academy.ru",
-    "resend_id": "5e7ffa18-33ca-4201-b4b3-9ab5e84a6934",
-    "status": "sent"
+    "resend_id": "8fe72ed9-2b38-49d8-9dfa-073e9c000164",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 51,
     "to": "info@miel-franchise.ru",
-    "resend_id": "c0b3eea9-1509-4729-9929-6aca584cdff6",
-    "status": "sent"
+    "resend_id": "99f51906-e8e2-4e12-ba72-efb37ed56632",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 52,
     "to": "info@subarenda-club.ru",
-    "resend_id": "39e7d4cb-775c-4a54-adf6-d1bc7b7042c7",
-    "status": "sent"
+    "resend_id": "f7c12a68-6605-4d16-9be0-41cebc72816d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 53,
     "to": "support@invest-realty.ru",
-    "resend_id": "f1328e18-ffce-4d8e-b4c6-3f603846d48e",
-    "status": "sent"
+    "resend_id": "9a016821-e6ba-4087-98e2-fb6e0db86345",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 54,
     "to": "info@shkola-rieltora.ru",
-    "resend_id": "dafc312a-1b8b-4d49-9a62-4e771cb75339",
-    "status": "sent"
+    "resend_id": "e8bfd48f-c733-44d1-b20f-5a75bb93eb65",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 55,
     "to": "edu@pn.ru",
-    "resend_id": "d316da34-9aa0-4546-83be-9bd2d4707ed5",
-    "status": "sent"
+    "resend_id": "b2b20f32-b017-49d1-9398-8421c0ecdb92",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 56,
     "to": "partner@pn.ru",
-    "resend_id": "642930a2-975b-4867-92bf-1e645c02cdf3",
-    "status": "sent"
+    "resend_id": "ad9204f4-2727-4c0e-abfa-b49adc6d0942",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 57,
     "to": "academy@monolit-est.ru",
-    "resend_id": "8dd8eb23-a784-4e10-a4e1-495309cc00be",
-    "status": "sent"
+    "resend_id": "b7d728e3-58cd-44f6-842c-d2e8a8cff6b0",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 58,
     "to": "edu@zlnd.ru",
-    "resend_id": "e0dd2800-d41b-435f-bfee-02732a5c2e07",
-    "status": "sent"
+    "resend_id": "b8062889-c3da-4aa9-bd40-d04b4fc55857",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 59,
     "to": "info@flipping-academy.ru",
-    "resend_id": "951be3bd-de96-4709-99a8-655defbe4211",
-    "status": "sent"
+    "resend_id": "505583b8-acd0-4be8-8387-35bc42114a2d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 60,
     "to": "school@posutochka24.ru",
-    "resend_id": "c2f1abc4-8f77-45d5-8590-0ed8b949f69f",
-    "status": "sent"
+    "resend_id": "7a1700dc-c4d8-4ea9-9636-59fd132e1622",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 61,
     "to": "academy@proestate.ru",
-    "resend_id": "2c9c9ff3-abe5-4db9-8c22-cc026c14a960",
-    "status": "sent"
+    "resend_id": "8a78c22a-bdcc-41c2-809d-39de733602cc",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 62,
     "to": "info@proestate.ru",
-    "resend_id": "90bb7849-a857-49ca-86b3-dd494e0c3909",
-    "status": "sent"
+    "resend_id": "949f989b-c4d0-4d40-93e1-d2d57f5cafe7",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 63,
     "to": "edu@skolkovo.ru",
-    "resend_id": "dbe57786-0cc5-43f5-9671-0a2f64248866",
-    "status": "sent"
+    "resend_id": "3cad6951-7f4e-4c97-ac97-004f473dc361",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 64,
     "to": "info@repa-pr.ru",
-    "resend_id": "9465d3b3-b422-4721-a36e-c3e1a57cc54d",
-    "status": "sent"
+    "resend_id": "f48ca20e-de06-4c39-b27f-efc4a8627839",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 65,
     "to": "school@urbanawards.ru",
-    "resend_id": "bfe8b518-370d-4869-b074-1a778efa7e70",
-    "status": "sent"
+    "resend_id": "8b78fe8d-638c-42c1-98a9-70369e221eab",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 66,
     "to": "partner@urbanawards.ru",
-    "resend_id": "93cbf284-48ba-4474-bd79-66cb5c11801b",
-    "status": "sent"
+    "resend_id": "27e5d51e-63b8-451e-b179-7b03e23e6adb",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 67,
     "to": "info@wh-academy.ru",
-    "resend_id": "89c06eda-8623-4e1f-9dbf-5a266be47a02",
-    "status": "sent"
+    "resend_id": "57e124b7-cfb5-439c-be40-aadb9cdfce1e",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 68,
     "to": "edu@bkn.ru",
-    "resend_id": "2ab9161c-92aa-46fc-b2f2-0e0a3e5c0693",
-    "status": "sent"
+    "resend_id": "9b56f5ec-e4cf-41c5-9ad5-487a66ed7ed5",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 69,
     "to": "info@mian.ru",
-    "resend_id": "c2345c26-8871-4242-8e84-eafe4532963e",
-    "status": "sent"
+    "resend_id": "74129981-fd2a-4604-8ca6-d202160ab83b",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 70,
     "to": "info@agr.spb.ru",
-    "resend_id": "50ee4d75-6366-429f-9369-c80b635192ad",
-    "status": "sent"
+    "resend_id": "d83e7ec7-d312-4a17-bc01-9da833dde599",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 71,
     "to": "edu@arspb.ru",
-    "resend_id": "9e0e404a-9b97-4142-acc7-a89f0c8ab7be",
-    "status": "sent"
+    "resend_id": "29dfd598-ee17-401a-b34f-072f0b1256a5",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 72,
     "to": "info@grso.ru",
-    "resend_id": "0bad3d1b-59d1-4733-a4d4-eb49f6928c9e",
-    "status": "sent"
+    "resend_id": "a78df2bf-3f16-4b54-a742-b7e7439b2590",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 73,
     "to": "info@urals-realty.ru",
-    "resend_id": "3d0cfa90-fc66-4183-a0aa-f3814d68cf8d",
-    "status": "sent"
+    "resend_id": "02205280-72c8-4613-a538-efec1a85ddcf",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 74,
     "to": "edu@upn.ru",
-    "resend_id": "c79e850a-4bd9-4b6d-af99-fb88f98beaef",
-    "status": "sent"
+    "resend_id": "10aaea07-b0b7-41d9-8ead-6a89bcc4c658",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 75,
     "to": "info@upn.ru",
-    "resend_id": "f6c14874-af72-4c20-8c41-75d2112024cf",
-    "status": "sent"
+    "resend_id": "8dc7aa20-2b83-4288-89a4-005c2638a26e",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 76,
     "to": "school@metrage.ru",
-    "resend_id": "76a7c594-035e-476f-ae7d-2ce3e28c45ff",
-    "status": "sent"
+    "resend_id": "6a628afd-97bf-4f1e-8cfa-c25567da129a",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 77,
     "to": "info@sobaka-pavlova.ru",
-    "resend_id": "c0941d30-f013-4220-8288-b042fa0d8d78",
-    "status": "sent"
+    "resend_id": "0e1a6832-5f0d-41c9-b237-e2204c8c23a1",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 78,
     "to": "edu@realtor-school.ru",
-    "resend_id": "784bf6b8-cd08-45dd-aef7-b5c361dc7283",
-    "status": "sent"
+    "resend_id": "00f3adca-6e02-47cf-b5f0-a3e36913fc69",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 79,
     "to": "info@invest-piter.ru",
-    "resend_id": "48ff0020-b158-4722-b764-3337ce992170",
-    "status": "sent"
+    "resend_id": "1698b838-ec44-40a0-a776-cc08bf63a4b1",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 80,
     "to": "partner@invest-piter.ru",
-    "resend_id": "46b53db5-4a98-4f1e-934a-873310473bb8",
-    "status": "sent"
+    "resend_id": "1af909bd-2e5d-4518-939d-98ca70d848f5",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 81,
     "to": "academy@pioneer.ru",
-    "resend_id": "57e0db08-286c-49f9-8231-236a7e99ca31",
-    "status": "sent"
+    "resend_id": "eaee1183-4066-43f1-b5c3-0bd19c37773d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 82,
     "to": "edu@kortros.ru",
-    "resend_id": "adc4d898-e2d0-4e66-adcb-521180c93ab4",
-    "status": "sent"
+    "resend_id": "0f303e29-ecb4-45d6-a0a7-c65c811e6d07",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 83,
     "to": "training@ingrad.ru",
-    "resend_id": "0e0dbfe1-66be-4835-9440-13c29f5954ae",
-    "status": "sent"
+    "resend_id": "6be1767c-c3a7-4f2c-adbd-22e6ef940a1a",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 84,
     "to": "academy@fsk.ru",
-    "resend_id": "92ae23ef-a27c-465f-a4dd-8ecfea1c0021",
-    "status": "sent"
+    "resend_id": "cd6e229d-e8b5-4850-9b90-a4754dcd4a04",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 85,
     "to": "partner@fsk.ru",
-    "resend_id": "fe143655-544f-4fc5-a0db-60b4363eb3e0",
-    "status": "sent"
+    "resend_id": "6ae85d7a-e38d-4a8d-b7c8-637e803bb2cc",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 86,
     "to": "edu@mr-group.ru",
-    "resend_id": "866be0b6-d1ff-4229-b628-1220d5c524fd",
-    "status": "sent"
+    "resend_id": "25387679-1ee8-45e4-8986-c14a30c71622",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 87,
     "to": "info@kvartirniy-vopros.ru",
-    "resend_id": "2723212b-11e4-4adb-b208-61154fc5ffa6",
-    "status": "sent"
+    "resend_id": "7f2503d3-7fd9-4123-9c8b-92fcd31baa27",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 88,
     "to": "school@cian.ru",
-    "resend_id": "40de2d40-04d7-49f6-8ba3-54b71e15f9f7",
-    "status": "sent"
+    "resend_id": "02a7bfc0-4c63-4d97-a7ad-51aca4e95bdc",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 89,
     "to": "adv@cian.ru",
-    "resend_id": "a5040b7f-381f-4325-b898-0d009c06631b",
-    "status": "sent"
+    "resend_id": "84d89887-50d2-4526-b9b4-b87eda169d99",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 90,
     "to": "partner@domclick.ru",
-    "resend_id": "502e6def-07cb-42ae-96f9-cd80a1942419",
-    "status": "sent"
+    "resend_id": "e12065d2-dc12-4606-a186-5afdb33ad447",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 91,
     "to": "edu@avito.ru",
-    "resend_id": "41274b70-19c3-4c91-9158-c689cd12fbf4",
-    "status": "sent"
+    "resend_id": "df3785b8-696e-493f-9b9e-83f993370379",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 92,
     "to": "b2b-education@avito.ru",
-    "resend_id": "fce71b9a-315e-4b18-a844-a7a2f7fa683f",
-    "status": "sent"
+    "resend_id": "d89d88f1-69f8-48d2-bbfb-72c04885e03d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 93,
     "to": "info@m2-academy.ru",
-    "resend_id": "37dd774b-b733-451b-8cad-01a20a2cda8a",
-    "status": "sent"
+    "resend_id": "2a925fc0-bb91-4ecf-9206-c9876111d1d5",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 94,
     "to": "school@samolet.ru",
-    "resend_id": "95d2fa54-2c86-4837-b155-768d4edb0f29",
-    "status": "sent"
+    "resend_id": "82881e49-586c-4781-a805-14c4f15b6f82",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 95,
     "to": "edu@glavstroy.ru",
-    "resend_id": "305b3dc3-38de-44d2-919e-faa8d4f752cd",
-    "status": "sent"
+    "resend_id": "d3ecf9ac-d580-4f47-a677-5c088c330300",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 96,
     "to": "training@lsrgroup.ru",
-    "resend_id": "20c19fb0-bafd-4df4-bfea-84c0ab226fb8",
-    "status": "sent"
+    "resend_id": "ebb608d0-fca0-4ee4-aaae-98f425b0baef",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 97,
     "to": "info@investor-re.ru",
-    "resend_id": "266c3ce4-7261-4fee-a3c0-f50b44ed1811",
-    "status": "sent"
+    "resend_id": "be7c10e6-d79c-4ef3-bca3-71ee78228fda",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 98,
     "to": "support@rent-academy.ru",
-    "resend_id": "e1928468-9969-4068-94c4-9d5804cd89eb",
-    "status": "sent"
+    "resend_id": "5301cc12-aa31-47bc-b06d-ad2921c2147b",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 99,
     "to": "info@realty-investor.ru",
-    "resend_id": "20487620-69c9-4711-92c9-ba35cf2a924e",
-    "status": "sent"
+    "resend_id": "22757904-1287-4d68-9e17-860bf70171f8",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 100,
     "to": "partner@realty-investor.ru",
-    "resend_id": "e4e2d826-949b-44b5-ab81-56dac13c8e14",
-    "status": "sent"
+    "resend_id": "31323281-aa74-4411-9422-2c1f8719d890",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 101,
     "to": "academy@vladis.ru",
-    "resend_id": "890f16a8-73f3-4054-9813-d51eed0f699f",
-    "status": "sent"
+    "resend_id": "7f2c5ecd-f1f1-4133-b311-d922976b0f6f",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 102,
     "to": "partner@vladis.ru",
-    "resend_id": "7756765f-9dfb-4838-8a11-e10ca4dc282d",
-    "status": "sent"
+    "resend_id": "163e6ca8-ebfc-4857-abc4-cd63fed139b0",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 103,
     "to": "edu@zhilfond.ru",
-    "resend_id": "1036e3eb-ec9d-4f50-8a1f-ffdec94c75be",
-    "status": "sent"
+    "resend_id": "5c82affa-d9a7-4262-ac8f-0924d6e33071",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 104,
     "to": "school@zhilfond.ru",
-    "resend_id": "5fdb2fe0-0533-4348-be83-193e1a85cf01",
-    "status": "sent"
+    "resend_id": "d64035b5-bd50-4195-b737-6362af0b5d26",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 105,
     "to": "academy@pik.ru",
-    "resend_id": "99107347-1e96-421c-a1f3-ec9a750a7450",
-    "status": "sent"
+    "resend_id": "3811b17f-0dda-43ac-adf2-ba19641ecee1",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 106,
     "to": "b2b@pik.ru",
-    "resend_id": "7dc4c50c-6539-434a-8f7f-2f079f4e0770",
-    "status": "sent"
+    "resend_id": "7266b58d-f95c-4b9a-9317-3ebd960f1713",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 107,
     "to": "edu@setlgroup.ru",
-    "resend_id": "e35af1c6-c3fd-47a6-9ed9-60aea1bec449",
-    "status": "sent"
+    "resend_id": "abb2bf19-8120-492d-91a1-d5ad42993b36",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 108,
     "to": "partner@setlgroup.ru",
-    "resend_id": "09b9a9ab-700c-4cf4-ad7a-3e4a5d21bb94",
-    "status": "sent"
+    "resend_id": "067a9cbb-d2eb-4f6e-9bd3-34235688d249",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 109,
     "to": "study@brusnika.ru",
-    "resend_id": "5b9204fd-5fc2-4cc1-9758-672ca819b6be",
-    "status": "sent"
+    "resend_id": "6d51f387-132f-4ddd-aaf1-18277ae424e6",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 110,
     "to": "hr@brusnika.ru",
-    "resend_id": "43c11806-4ff6-4dfb-a13b-294d944700a1",
-    "status": "sent"
+    "resend_id": "b871acce-e3b9-478e-8052-bce601ebe9ef",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 111,
     "to": "academy@a101.ru",
-    "resend_id": "06f89add-2ac9-4974-9146-13fbf71a0dea",
-    "status": "sent"
+    "resend_id": "4275bbae-7a5d-4a1b-8e86-5add93692417",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 112,
     "to": "partner@a101.ru",
-    "resend_id": "992a6502-928c-45a2-bf33-4e4432b27d75",
-    "status": "sent"
+    "resend_id": "44dcf6a1-e90d-4e95-9c03-d351781e27f7",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 113,
     "to": "training@sminex.com",
-    "resend_id": "5dcd3eb0-c5fd-4df2-8b94-3a2613a16c04",
-    "status": "sent"
+    "resend_id": "b6f00351-ce25-476d-98c6-54cc0a65602c",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 114,
     "to": "edu@etalongroup.com",
-    "resend_id": "0abbf98c-e86d-41f8-86d7-0f69163c2c29",
-    "status": "sent"
+    "resend_id": "0de440b4-a911-47da-bc38-da396e7ef306",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 115,
     "to": "partner@rg-dev.ru",
-    "resend_id": "a089ddb7-807d-4bb3-ae10-ce683f0a9cde",
-    "status": "sent"
+    "resend_id": "61f57ddf-c2db-4086-b41c-4c6103192185",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 116,
     "to": "academy@strana.com",
-    "resend_id": "ab4e0d30-5a42-4979-9b78-53daeb1d3f4c",
-    "status": "sent"
+    "resend_id": "a5e43e84-cac1-4fd9-907c-68e269ba09a7",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 117,
     "to": "study@dogma.ru",
-    "resend_id": "ff172441-b136-4f4f-849b-526f020d9e87",
-    "status": "sent"
+    "resend_id": "fc0c1a51-7363-4eff-adfc-59e347fb34ae",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 118,
     "to": "info@grnsk.ru",
-    "resend_id": "93c5cca5-3ffa-4383-b783-3ca931156b6e",
-    "status": "sent"
+    "resend_id": "c7ed4cdc-603e-4671-adeb-4f6cb14667d0",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 119,
     "to": "edu@grnsk.ru",
-    "resend_id": "3a9c7907-9379-4b6d-966d-1a96906b5549",
-    "status": "sent"
+    "resend_id": "22bcf4d5-ec46-4e46-9e05-8226d6cf2148",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 120,
     "to": "info@grnn.ru",
-    "resend_id": "7bea2bc8-464b-41a6-b751-ddb4a008b15c",
-    "status": "sent"
+    "resend_id": "e431596e-eda2-45ef-b8fc-7a02e9114747",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 121,
     "to": "edu@grnn.ru",
-    "resend_id": "611866fb-6cba-4580-b9fd-34e5d2943a97",
-    "status": "sent"
+    "resend_id": "21b255dd-d882-433d-adbd-838e091bc6e0",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 122,
     "to": "info@grb.ru",
-    "resend_id": "7ed84474-15df-4f3c-a65d-e8cf349c76c7",
-    "status": "sent"
+    "resend_id": "311e3735-defc-4ad6-84c5-f327ecf48cb8",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 123,
     "to": "edu@grk.ru",
-    "resend_id": "5f70e506-ca9e-4cb1-874b-23a2654a0d7e",
-    "status": "sent"
+    "resend_id": "8aee3380-0e12-451b-8cf4-d8686d49305b",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 124,
     "to": "study@grkk.ru",
-    "resend_id": "054dd6e4-20da-46e4-bbc9-f35fa4bb0b9d",
-    "status": "sent"
+    "resend_id": "2e8b135a-d61a-40b7-9c82-e11e989f4efd",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 125,
     "to": "info@dvgr.ru",
-    "resend_id": "e58d264b-d2d0-45ad-bc31-3cd1e83f2695",
-    "status": "sent"
+    "resend_id": "cebea363-d510-45ec-ac77-90f0f0fc97d1",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 126,
     "to": "partner@rgr74.ru",
-    "resend_id": "bf0f361e-e44e-48ba-87c7-bea15c1e2696",
-    "status": "sent"
+    "resend_id": "5215c57e-3fec-4aad-9fdf-cb5e8dab6406",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 127,
     "to": "edu@grt.ru",
-    "resend_id": "0cad1a35-9ed7-403d-9753-9b7fa6639eb9",
-    "status": "sent"
+    "resend_id": "61eff30f-1278-4e58-8206-2d27f45f3e20",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 128,
     "to": "school@profrg.ru",
-    "resend_id": "114ae501-2821-4278-b0cc-14af5c5f4402",
-    "status": "sent"
+    "resend_id": "8db35492-6ead-44d5-a7a9-d84e4df3716d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 129,
     "to": "academy@rgr-permo.ru",
-    "resend_id": "a9880e57-aac5-4016-bdfd-b4492773130e",
-    "status": "sent"
+    "resend_id": "0550199b-650b-41ab-b99a-b08391ec6324",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 130,
     "to": "mail@gros.ru",
-    "resend_id": "6b72ec82-94a7-4ead-b8ee-99111ce4f08d",
-    "status": "sent"
+    "resend_id": "b36b3b72-1089-45c8-bafa-44fc31a71fa9",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 131,
     "to": "academy@nmarket.pro",
-    "resend_id": "3810d63f-cc94-4338-bf0d-c4871f8a490b",
-    "status": "sent"
+    "resend_id": "b899f5d8-abf9-40f6-8fd2-7a40dfeba96f",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 132,
     "to": "edu@nmarket.pro",
-    "resend_id": "c5316124-d904-4320-aa7c-36004701cc33",
-    "status": "sent"
+    "resend_id": "801f712c-dfbc-4cb5-879f-ae16d4577ebc",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 133,
     "to": "partner@nmarket.pro",
-    "resend_id": "cbfd8527-f71f-4011-a5a3-4734e43f6abd",
-    "status": "sent"
+    "resend_id": "abd82a78-8d24-4651-94f7-903f8e708152",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 134,
     "to": "academy@profitbase.ru",
-    "resend_id": "bde8502d-41d3-49e4-a315-e64446be7fab",
-    "status": "sent"
+    "resend_id": "a0efafbd-aa65-4ef2-b6c6-a53b5c1024f2",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 135,
     "to": "edu@macrocrm.ru",
-    "resend_id": "603acd65-5447-4242-b96c-02300ca4f19f",
-    "status": "sent"
+    "resend_id": "8db9e143-353b-442c-8fbf-214860caec24",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 136,
     "to": "support@topnlab.ru",
-    "resend_id": "ef352e49-71b9-4f17-9f82-2c3d97b8a383",
-    "status": "sent"
+    "resend_id": "0e81473f-58bb-4599-b865-83397711ec16",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 137,
     "to": "school@realtsoft.ru",
-    "resend_id": "a670a4e3-2697-40ef-922f-fbb9486872d2",
-    "status": "sent"
+    "resend_id": "23ce42df-5b23-4b53-b74a-4090a0dfc8f4",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 138,
     "to": "study@homeapp.ru",
-    "resend_id": "b43958e8-cf7f-4196-8866-6247dc5becd6",
-    "status": "sent"
+    "resend_id": "3dca836a-14e6-4086-9d5d-18f4f633c4e8",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 139,
     "to": "academy@bmetr.ru",
-    "resend_id": "593f3570-5a7f-4b18-8139-b099e3b7ed68",
-    "status": "sent"
+    "resend_id": "a101049d-9710-499b-a794-5956f2ca639d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 140,
     "to": "info@jcat.ru",
-    "resend_id": "12461948-2c72-4a28-8f85-e5071533f01c",
-    "status": "sent"
+    "resend_id": "34df83d0-b58e-428e-b9a1-ada9a436953b",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 141,
     "to": "info@alloca.ru",
-    "resend_id": "04a87406-94e5-4d88-bb75-edef1f2fca5e",
-    "status": "sent"
+    "resend_id": "5e411342-3384-4d91-af0e-602f6d127c7d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 142,
     "to": "info@flipping-club.ru",
-    "resend_id": "be3279e7-9d9c-40cd-8fae-37e725419111",
-    "status": "sent"
+    "resend_id": "fb142762-11db-42f6-99b4-c6672243c5d1",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 143,
     "to": "smart@flipping-club.ru",
-    "resend_id": "bcdea7c3-3efa-43f8-aa8f-092619c27d44",
-    "status": "sent"
+    "resend_id": "6907f931-8956-402e-b3b8-bcfb1415229f",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 144,
     "to": "support@invest-forum.ru",
-    "resend_id": "c01c7ff6-894e-4b66-95c6-1ed28b304e93",
-    "status": "sent"
+    "resend_id": "3a2270d3-0ce7-4836-8729-1b8a46e4aef2",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 145,
     "to": "school@rent-business.ru",
-    "resend_id": "3aa2192b-ec8c-40a8-80d9-3e1cb202c815",
-    "status": "sent"
+    "resend_id": "1ec458c7-904b-4d37-9484-b12e47a46c38",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 146,
     "to": "partner@posutochka-pro.ru",
-    "resend_id": "e492d4c4-ff5d-4cc3-adec-1011129ea325",
-    "status": "sent"
+    "resend_id": "27eb5e86-5f07-4083-8f38-a268f82d367f",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 147,
     "to": "info@subarenda-intensiv.ru",
-    "resend_id": "74d8dce7-ed6f-4e53-b8ad-c9bece65663c",
-    "status": "sent"
+    "resend_id": "62284637-d5aa-460b-b56a-6eacb879b213",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 148,
     "to": "study@invest-expert.ru",
-    "resend_id": "cb8698e3-f5d0-42d8-905c-bb3d60a2f572",
-    "status": "sent"
+    "resend_id": "cfab3225-7c18-48c7-9aaa-e5995225c763",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 149,
     "to": "academy@dom-invest.ru",
-    "resend_id": "f32b9c59-22f0-49fc-b473-059b9fbbf43e",
-    "status": "sent"
+    "resend_id": "f32ec218-d6b1-4dfc-bc86-53cb42ef9149",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 150,
     "to": "info@smart-flipping.ru",
-    "resend_id": "cc8e437d-c66b-4324-ae39-30a7c37c24dc",
-    "status": "sent"
+    "resend_id": "dc160b2a-a3d7-467d-9fc4-c75b8d934c14",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 151,
     "to": "support@realty-evolution.ru",
-    "resend_id": "b65c8786-444d-45da-9fa6-00a40d24dcf7",
-    "status": "sent"
+    "resend_id": "355fc80a-c1fc-4739-8aa8-51c1e8117fe6",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 152,
     "to": "info@invest-estate.pro",
-    "resend_id": "0f9208d3-77e6-46bc-9470-080a83941b31",
-    "status": "sent"
+    "resend_id": "0d00ff9c-df49-4954-88af-0f21fd37eb34",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 153,
     "to": "academy@renta-ved.ru",
-    "resend_id": "b96575f7-9174-4c01-98cf-20498546bcde",
-    "status": "sent"
+    "resend_id": "8c8506ed-b699-44e0-92e1-ec5b093f84a4",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 154,
     "to": "partner@glavinvest-re.ru",
-    "resend_id": "2b743576-0fb1-4804-9022-15267caefeee",
-    "status": "sent"
+    "resend_id": "060930af-b03d-4552-8530-35903245b469",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 155,
     "to": "realestate@skillbox.ru",
-    "resend_id": "c33d71db-1328-4d6f-8eee-3d05be433451",
-    "status": "sent"
+    "resend_id": "7e97c086-1be6-4267-8916-677b8027004d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 156,
     "to": "property@netology.ru",
-    "resend_id": "09ff04ec-7217-4fd0-bd9f-aebdf94c9ad0",
-    "status": "sent"
+    "resend_id": "7fdc9e25-8593-4e6f-b80c-97c5542e3b6e",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 157,
     "to": "realty@synergy.ru",
-    "resend_id": "72100961-82b4-4728-809b-18eb01a5e038",
-    "status": "sent"
+    "resend_id": "6773dbe9-1921-447b-a17c-718bf72ba3b3",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 158,
     "to": "info@ipap.ru",
-    "resend_id": "5ec1539a-a075-4a21-a1d1-91b36c1b2f4f",
-    "status": "sent"
+    "resend_id": "e5e6559a-ed27-4cb1-9f03-8fe750be4c61",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 159,
     "to": "info@kurs-rieltor.ru",
-    "resend_id": "2e9e5ecb-4149-4a35-af65-78039e405bad",
-    "status": "sent"
+    "resend_id": "e8f34463-6e8c-4cbb-8aea-4ffb64f4e2dd",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 160,
     "to": "support@top-expert.ru",
-    "resend_id": "cbabed07-0a12-4c40-8ce6-9551520b274e",
-    "status": "sent"
+    "resend_id": "47e2976d-77e0-41f6-bab6-9d3af47fdf31",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 161,
     "to": "school@monolit-realty.ru",
-    "resend_id": "f96cc9f2-1fee-450a-8c52-1a2548727fbb",
-    "status": "sent"
+    "resend_id": "59d3a341-a16e-4333-9903-9f3731699aa2",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 162,
     "to": "training@centralnoe.ru",
-    "resend_id": "1bbec502-5d40-4f62-8462-8e148d9d1ab5",
-    "status": "sent"
+    "resend_id": "561d3da9-f2e5-4f54-9010-f19c781b74a8",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 163,
     "to": "academy@megapol.ru",
-    "resend_id": "c473bf16-a25f-4092-9ad8-a4fb5f3a79e4",
-    "status": "sent"
+    "resend_id": "cc672b18-bebe-4017-a6d2-32beebb902b4",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 164,
     "to": "info@ndv-academy.ru",
-    "resend_id": "ee5a9640-e695-4104-8038-9d31e9e0bb6f",
-    "status": "sent"
+    "resend_id": "8e63d832-5fd7-40b8-81d8-e8ee8948ffa9",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 165,
     "to": "study@zolotoy-kompas.ru",
-    "resend_id": "72ecc78f-adf8-4342-a4a0-f6be40bea482",
-    "status": "sent"
+    "resend_id": "17d64221-23be-4eae-ae13-548fbd4ac3e6",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 166,
     "to": "partner@onperspective.ru",
-    "resend_id": "7f4d02c5-9db8-4255-a753-23451175fee3",
-    "status": "sent"
+    "resend_id": "5c9c6d7f-8633-449c-bf32-492c9b82490a",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 167,
     "to": "academy@onperspective.ru",
-    "resend_id": "4676b245-4d72-45b7-9782-e2e399c9874b",
-    "status": "sent"
+    "resend_id": "289f5400-5baa-4986-b969-81abcd4a11d3",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 168,
     "to": "b2b@onperspective.ru",
-    "resend_id": "a259eb53-775b-43b7-ae5a-e2af13054195",
-    "status": "sent"
+    "resend_id": "d75430f5-eb83-49fa-807f-c5388bc06e23",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 169,
     "to": "info@realty-academy.ru",
-    "resend_id": "24ba8e2c-5ecb-41a6-bc18-a2656605dc7d",
-    "status": "sent"
+    "resend_id": "b6f0d7c5-6359-42ff-aa65-dcd33220e44d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 170,
     "to": "edu@realty-school.ru",
-    "resend_id": "1e8e7504-4b53-4bb2-aa92-ab29765ffe64",
-    "status": "sent"
+    "resend_id": "e395f447-e74a-4446-91fb-6bc299c2e05d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 171,
     "to": "support@rielt-pro.ru",
-    "resend_id": "727c65e5-640c-4b71-b6e7-6d6b99244b58",
-    "status": "sent"
+    "resend_id": "c2d6bdb0-f712-419d-9ad4-e2e1d6febba5",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 172,
     "to": "partner@rielt-pro.ru",
-    "resend_id": "1aaaa7e8-5fcc-485b-a3f3-0f06bf72ac72",
-    "status": "sent"
+    "resend_id": "cd773a1b-558e-4b27-aba5-840d5b09087c",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 173,
     "to": "info@invest-realty.pro",
-    "resend_id": "13e4f80e-6814-4dda-b4da-ec748dac7c30",
-    "status": "sent"
+    "resend_id": "3a00ee91-6b07-4a84-ac35-bd1fd3526d6a",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 174,
     "to": "club@invest-realty.pro",
-    "resend_id": "543c2e66-dfd3-4657-b7fb-f34c0a52d9c6",
-    "status": "sent"
+    "resend_id": "ba5899c3-010f-4a25-9bee-eabe0c741d6b",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 175,
     "to": "school@subarenda24.ru",
-    "resend_id": "8674e3b8-98bf-4f36-8975-2d3ced8bc852",
-    "status": "sent"
+    "resend_id": "1c95b1c8-4777-468b-b627-c5da0366225c",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 176,
     "to": "info@posutochka-academy.ru",
-    "resend_id": "28960ab7-2003-460a-a295-6093fe9d7243",
-    "status": "sent"
+    "resend_id": "a231e5bd-8bbf-489c-b4a8-f25c5957e9d3",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 177,
     "to": "partner@posutochka-academy.ru",
-    "resend_id": "0460fdd5-fc5d-456e-9604-da34b285b3fe",
-    "status": "sent"
+    "resend_id": "10e7565e-90a8-4904-8404-7bf2cec12d8c",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 178,
     "to": "edu@pioneer.ru",
-    "resend_id": "1ace1ea1-9c5f-4c74-a4da-6192a3486ced",
-    "status": "sent"
+    "resend_id": "c252a0dc-cdef-4b7f-b7f0-10dc5be8bee8",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 179,
     "to": "academy@gk-granelle.ru",
-    "resend_id": "b171ebcb-8714-4f79-8f59-a4419e059621",
-    "status": "sent"
+    "resend_id": "4d02bddb-d077-46ac-8747-3cf2ea50c11c",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 180,
     "to": "hr@gk-granelle.ru",
-    "resend_id": "fa67ba70-d0a5-42dc-ac3e-d8165f26a7f4",
-    "status": "sent"
+    "resend_id": "0cd7e80c-abec-42c8-89d6-022ecdc780a2",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 181,
     "to": "training@gk-osnova.ru",
-    "resend_id": "ebc295aa-a24d-4a93-b170-a940cd208729",
-    "status": "sent"
+    "resend_id": "e229458d-b62c-4709-b546-b015516a0810",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 182,
     "to": "info@urban-academy.ru",
-    "resend_id": "8d6c8281-5a50-4abc-8341-28969777ed57",
-    "status": "sent"
+    "resend_id": "9b82c3a3-5e8d-4dc5-b686-947decaef3ab",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 183,
     "to": "edu@mgre.ru",
-    "resend_id": "c6b32555-5eba-4d05-b049-759b288cc9a7",
-    "status": "sent"
+    "resend_id": "9ee367ab-754a-474d-ac7a-1cf2f677ab94",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 184,
     "to": "partner@mgre.ru",
-    "resend_id": "b9bf1967-a6e0-4347-885c-8d976471023d",
-    "status": "sent"
+    "resend_id": "bb4574f2-13fb-417a-9a78-88e15dce1f42",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 185,
     "to": "info@rgr-yug.ru",
-    "resend_id": "8f85f9f3-20cc-49c3-b83e-54aa4076ab37",
-    "status": "sent"
+    "resend_id": "3a4d31f9-e82a-4986-93a8-0f0165ea6b84",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 186,
     "to": "edu@rgr-yug.ru",
-    "resend_id": "cbb2e9d6-f79f-4b8b-9fb9-80e9742fa499",
-    "status": "sent"
+    "resend_id": "e8586b5f-8f4f-41d5-a360-fbb673f2a67e",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 187,
     "to": "school@rgr-vostok.ru",
-    "resend_id": "a73724e6-8c79-41ad-af77-d2c452d50e1b",
-    "status": "sent"
+    "resend_id": "2e4af34a-cc62-434d-ae59-85dc33e57a18",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 188,
     "to": "academy@rgr-sibir.ru",
-    "resend_id": "ea546a6d-f323-4514-af93-2459296a108c",
-    "status": "sent"
+    "resend_id": "9da1b11c-c3f1-4ea9-91cf-0e86ab267969",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 189,
     "to": "partner@rgr-sibir.ru",
-    "resend_id": "bd1e39d8-bcd1-4edf-9d2f-486a443df4fc",
-    "status": "sent"
+    "resend_id": "bf1adf52-a7b5-4522-9d6d-a51febf51265",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 190,
     "to": "info@gildia-spb.ru",
-    "resend_id": "4284fa49-3cec-45dd-bfed-fb3d966bc5ef",
-    "status": "sent"
+    "resend_id": "72367f5c-6e42-425c-a99e-f5b3b0b15031",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 191,
     "to": "edu@gildia-spb.ru",
-    "resend_id": "e137fe12-1e53-4178-9960-f7f06fe3bae3",
-    "status": "sent"
+    "resend_id": "2b0e5791-ef2b-42ae-816b-00a5d62e214d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 192,
     "to": "training@ndv.ru",
-    "resend_id": "40221c00-6d72-4ead-81b5-8e4b40a55ebd",
-    "status": "sent"
+    "resend_id": "585bfc2e-0272-4e0c-b089-7cc0ffbb6c0d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 193,
     "to": "partner@ndv.ru",
-    "resend_id": "93352f61-c5f1-4505-8c8f-97248364bd75",
-    "status": "sent"
+    "resend_id": "1de7a201-4043-44c8-b472-e42a49a6189d",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 194,
     "to": "study@estatet.ru",
-    "resend_id": "ab89ee6b-84f1-4e84-94d4-90b10b4d58fc",
-    "status": "sent"
+    "resend_id": "4a41491a-29e6-4b89-b878-47bd32001e49",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 195,
     "to": "academy@glavstroy-edu.ru",
-    "resend_id": "651eb56f-01bc-4895-ad31-628bccf8a0f1",
-    "status": "sent"
+    "resend_id": "6e6cfc3b-bac0-4fcf-9e4c-06018dc0f9f9",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 196,
     "to": "school@lsr-group.ru",
-    "resend_id": "d3c4c7fc-cd46-4797-a1b6-2218263ddf1b",
-    "status": "sent"
+    "resend_id": "91d10f78-0359-4312-b0ae-20bc8a3c4af4",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 197,
     "to": "info@proptech-academy.ru",
-    "resend_id": "e14361f5-7525-4a33-a642-fa0135e3fd92",
-    "status": "sent"
+    "resend_id": "f342563e-f5d0-453f-aef9-a2c5eac0ad64",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 198,
     "to": "support@invest-re.ru",
-    "resend_id": null,
-    "status": "fail"
+    "resend_id": "b00bec1a-04f2-43b0-a22d-b2de77f8f8d6",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 199,
     "to": "partner@invest-re.ru",
-    "resend_id": null,
-    "status": "fail"
+    "resend_id": "db1c228d-91cb-475e-86c5-a9a3170921db",
+    "status": "sent",
+    "batch": "retry"
   },
   {
     "i": 200,
     "to": "info@realty-education.ru",
     "resend_id": null,
-    "status": "fail"
+    "status": "fail",
+    "batch": "retry"
   }
 ]
